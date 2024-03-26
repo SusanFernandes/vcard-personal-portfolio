@@ -35,12 +35,12 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    hsl(2, 75%, 86%) 0%, 
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(2, 75%, 86%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
@@ -50,8 +50,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(170, 100%, 72%), 
+    hsl(2, 75%, 86%)
   );
 
   /* solid */
@@ -63,8 +63,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(170, 100%, 72%);
+  --vegas-gold: hsl(2, 75%, 86%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -557,14 +557,14 @@ main {
 
 
 /**
- * #testimonials 
+ * #experience 
  */
 
-.testimonials { margin-bottom: 30px; }
+.experience { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.experience-title { margin-bottom: 20px; }
 
-.testimonials-list {
+.experience-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -578,12 +578,12 @@ main {
   scroll-snap-type: inline mandatory;
 }
 
-.testimonials-item {
+.experience-item {
   min-width: 100%;
   scroll-snap-align: center;
 }
 
-.testimonials-avatar-box {
+.experience-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -593,9 +593,9 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.experience-item-title { margin-bottom: 7px; }
 
-.testimonials-text {
+.experience-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -609,7 +609,7 @@ main {
 
 
 /**
- * #testimonials-modal
+ * #experience-modal
  */
 
 .modal-container {
@@ -655,7 +655,7 @@ main {
   pointer-events: all;
 }
 
-.testimonials-modal {
+.experience-modal {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
@@ -669,7 +669,7 @@ main {
   z-index: 2;
 }
 
-.modal-container.active .testimonials-modal {
+.modal-container.active .experience-modal {
   transform: scale(1);
   opacity: 1;
 }
@@ -1406,11 +1406,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
-  /* testimonials */
+  /* experience */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .experience-title { margin-bottom: 25px; }
 
-  .testimonials-list {
+  .experience-list {
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
@@ -1422,28 +1422,28 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
+  .experience-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .experience-avatar-box img { width: 80px; }
 
-  .testimonials-item-title {
+  .experience-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
   }
 
-  .testimonials-text {
+  .experience-text {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+  /* experience modal */
 
   .modal-container { padding: 20px; }
 
-  .testimonials-modal {
+  .experience-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -1584,9 +1584,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* testimonials modal */
+  /* experience modal */
 
-  .testimonials-modal {
+  .experience-modal {
     gap: 35px;
     max-width: 680px;
   }
@@ -1730,9 +1730,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 20px 25px;
   }
 
-  /* testimonials */
+  /* experience */
 
-  .testimonials-item { min-width: calc(50% - 15px); }
+  .experience-item { min-width: calc(50% - 15px); }
 
   /* clients */
 
